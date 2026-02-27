@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Input from "./components/Input";
-// import Robot from "./components/Robot";
+import Icons from "./components/Icons";
 
 const page = () => {
   return (
@@ -16,6 +16,7 @@ const page = () => {
           <Navbar />
           <Hero />
           <Input />
+          <Icons />
         </div>
       </div>
     </>
