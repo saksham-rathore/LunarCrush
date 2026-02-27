@@ -16,7 +16,7 @@ const Icons = () => {
     <>
       <div className="text-white">
         <h1
-          className={`${lora.className} text-5xl text-white pt-90 text-center tracking-wide`}
+          className={`${lora.className} text-6xl text-white pt-90 text-center tracking-wide`}
         >
           Loved by{" "}
           <span className={`${instrument.className}`}>
@@ -29,22 +29,35 @@ const Icons = () => {
       <div className="flex justify-center pt-10"> 
         <div className="flex-row">
 
-          <div className="w-100 h-60 bg-white rounded-xl"></div>
-          <div className="w-100 h-60 bg-white rounded-xl"></div>
+          <div className="w-100 h-60 bg-white/5 backdrop-blur-lg border-white/10 rounded-xl m-2 flex items-center justify-center">
+          <img src="tradingview.svg" alt="logo" className="w-44 h-44"/>
+          </div>
+         
+          <div className="w-100 h-60 bg-white/5 backdrop-blur-lg border-white/10 rounded-xl m-2 flex items-center justify-center">
+          <img src="ethereum.png" alt="logo" className="w-54 h-54"/>
+          </div>
 
         </div>
 
         <div className="flex-row">
 
-          <div className="w-100 h-60 bg-white rounded-xl"></div>
-          <div className="w-100 h-60 bg-white rounded-xl"></div>
+          <div className="w-100 h-60 bg-white/5 backdrop-blur-lg border-white/10 rounded-xl m-2 flex items-center justify-center">
+          <img src="usdc.png" alt="logo" className="w-44 h-44" />
+          </div>
+          <div className="w-100 h-60 bg-white/5 backdrop-blur-lg border-white/10 rounded-xl m-2 flex items-center justify-center">
+          <img src="xrp.png" alt="logo" className="w-44 h-44"/>
+          </div>
 
         </div>
 
         <div className="flex-row">
 
-          <div className="w-100 h-60 bg-white rounded-xl"></div>
-          <div className="w-100 h-60 bg-white rounded-xl"></div>
+          <div className="w-100 h-60 bg-white/5 backdrop-blur-lg border-white/10 rounded-xl m-2 flex items-center justify-center">
+          <img src="dollar.png" alt="logo" className="w-44 h-44"/>
+          </div>
+          <div className="w-100 h-60 bg-white/5 backdrop-blur-lg border-white/10 rounded-xl m-2 flex items-center justify-center">
+          <img src="btc.png" alt="logo" className="w-44 h-44"/>
+          </div>
 
         </div>
       </div>
