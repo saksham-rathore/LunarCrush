@@ -15,14 +15,14 @@ const Navbar = () => {
         <div>
           <div className="text-white flex gap-10 items-center">
             <ul className="flex gap-10">
-              <li>Products</li>
-              <li>Solutions</li>
-              <li>Pricing</li>
+              <li className="hover:text-violet-600">Products</li>
+              <li className="hover:text-violet-600">Solutions</li>
+              <li className="hover:text-violet-600">Pricing</li>
             </ul>
-            <button className="border border-violet-600 px-5 py-1 rounded-sm">
+            <button className="border border-violet-600 px-5 py-1 rounded-sm hover:border-violet-300">
               LOG IN
             </button>
-            <button className="px-5 py-1 rounded-sm border bg">APP</button>
+            <button className="px-5 py-1 rounded-sm border bg hover:border-violet-600 hover:text-violet-600">APP</button>
           </div>
         </div>
       </div>

@@ -1,9 +1,9 @@
 import React from "react";
-import { Inter,Instrument_Serif } from "next/font/google";
+import { Lato,Instrument_Serif } from "next/font/google";
 
-const inter = Inter({
+const inter = Lato({
   subsets: ["latin"],
-  weight: ["700", "800", "900"],
+  weight: ["400"],
 });
 
 const instrument = Instrument_Serif({
