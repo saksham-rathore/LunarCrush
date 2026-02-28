@@ -19,10 +19,10 @@ const Navbar = () => {
               <li className="hover:text-violet-600">Solutions</li>
               <li className="hover:text-violet-600">Pricing</li>
             </ul>
-            <button className="border border-violet-600 px-5 py-1 rounded-sm hover:border-violet-300">
+            <button className="border border-violet-600 px-5 py-1 rounded-sm hover:border-violet-400">
               LOG IN
             </button>
-            <button className="px-5 py-1 rounded-sm border bg hover:border-violet-600 hover:text-violet-600">APP</button>
+            <button className="px-5 py-1 rounded-sm border bg hover:border-violet-600 hover:text-violet-400">APP</button>
           </div>
         </div>
       </div>

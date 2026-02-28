@@ -1,6 +1,5 @@
 "use client";
-import React, { use } from "react";
-import { ArrowRight } from "lucide-react";
+import React from "react";
 
 const Input = () => {
   return (

@@ -1,1 +1,23 @@
 @import "tailwindcss";
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 30s linear infinite;
+  will-change: transform;
+}
+
+.animate-scroll img {
+  transition: transform 2s ease, opacity 2s ease;
+}
+
+.animate-scroll img:hover {
+  transform: scale(1.03);
+}
