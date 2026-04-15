@@ -13,7 +13,7 @@ const IntegrationSection = () => {
   ];
 
   const integrations = [
-    { name: "ANTHROPIC", logo: "/anthropic.png" }, // I'll assume these logos exist or use text
+    { name: "ANTHROPIC", logo: "/anthropic.png" },
     { name: "COINBASE", logo: "/coinbase.png" },
     { name: "GOOGLE", logo: "/google.png" }
   ];
