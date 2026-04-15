@@ -1,5 +1,6 @@
 import React from "react";
 import { Lato,Instrument_Serif } from "next/font/google";
+import HeroAscii from "./HeroAscii";
 
 const inter = Lato({
   subsets: ["latin"],
@@ -13,7 +14,8 @@ const instrument = Instrument_Serif({
 
 const Hero = () => {
   return (
-    <div className="pt-24 pb-12 flex flex-col items-center text-center">
+    <div className="pt-24 pb-12 flex flex-col items-center text-center relative">
+      <HeroAscii />
       <h1 className={`${inter.className} text-7xl md:text-9xl text-white font-medium tracking-tight animate-in fade-in slide-in-from-bottom-5 duration-700`}>
         Social Media Impacts
       </h1>
