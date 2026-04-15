@@ -8,7 +8,7 @@ import Robot from "./components/Robot";
 import Herosection from "./components/Herosection";
 import Footer from "./components/Footer";
 
-const page = () => {
+const Page = () => {
   return (
     <>
       <div className="min-h-screen bg-black relative overflow-hidden">
@@ -30,4 +30,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

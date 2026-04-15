@@ -13,16 +13,18 @@ const Navbar = () => {
         </div>
 
         <div>
-          <div className="text-white flex gap-10 items-center">
+          <div className="text-white flex gap-10 items-center font-medium">
             <ul className="flex gap-10">
-              <li className="hover:text-violet-600">Products</li>
-              <li className="hover:text-violet-600">Solutions</li>
-              <li className="hover:text-violet-600">Pricing</li>
+              <li className="hover:text-violet-400 cursor-pointer transition-colors">Products</li>
+              <li className="hover:text-violet-400 cursor-pointer transition-colors">Solutions</li>
+              <li className="hover:text-violet-400 cursor-pointer transition-colors">Pricing</li>
             </ul>
-            <button className="border border-violet-600 px-5 py-1 rounded-sm hover:border-violet-400">
+            <button className="border border-violet-600/50 px-5 py-1.5 rounded-full hover:border-violet-400 hover:bg-violet-600/10 transition-all duration-300">
               LOG IN
             </button>
-            <button className="px-5 py-1 rounded-sm border bg hover:border-violet-600 hover:text-violet-400">APP</button>
+            <button className="px-6 py-1.5 rounded-full bg-violet-600 border border-violet-600 hover:bg-transparent hover:text-violet-400 transition-all duration-300 shadow-[0_0_20px_rgba(124,58,237,0.3)]">
+              APP
+            </button>
           </div>
         </div>
       </div>

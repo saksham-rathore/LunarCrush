@@ -2,42 +2,34 @@ import React from "react";
 
 const Herosection = () => {
   return (
-    <div className="h-[500px] w-full overflow-hidden">
-      <div className="h-full flex items-center p-10 gap-10 animate-scroll">
-        <div className="flex gap-10">
-          <img src="BTC.avif" alt="BTC" className="h-[380px] rounded-lg" />
-          <img src="crwallet.jpg"alt="wallet"className="h-[380px] rounded-lg"/>
-          <img src="candles.jpg" alt="samar" className="h-[380px] rounded-lg" />
-          <img src="bull.jpg" alt="samar" className="h-[380px] rounded-lg" />
-          <img src="ETH.jpg" alt="samar" className="h-[380px] rounded-lg" />
-          <img src="Chart.jpg" alt="cry" className="h-[380px] rounded-lg" />
-          <img src="bearish.jpg" alt="samar" className="h-[380px] rounded-lg" />
-          <img src="risk.jpg" alt="samar" className="h-[380px] rounded-lg" />
-          <img src="Fail.jpg" alt="samar" className="h-[380px] rounded-lg" />
-          <img src="Again.jpg" alt="samar" className="h-[380px] rounded-lg" />
-          <img src="Archery.jpg" alt="samar" className="h-[380px] rounded-lg" />
-          <img src="Archery.jpg" alt="samar" className="h-[380px] rounded-lg" />
-          <img src="$$$.jpg" alt="samar" className="h-[380px] rounded-lg" />
-          <img src="bearish.jpg" alt="samar" className="h-[380px] rounded-lg" />
-          <img src="bitcoin.jpg" alt="samar" className="h-[380px] rounded-lg" />
-
-          <img src="BTC.avif" alt="BTC" className="h-[380px] rounded-lg" />
-          <img src="crwallet.jpg"alt="wallet"className="h-[380px] rounded-lg"/>
-          <img src="Chart.jpg" alt="cry" className="h-[380px] rounded-lg" />
-          <img src="ETH.jpg" alt="samar" className="h-[380px] rounded-lg" />
-          <img src="bull.jpg" alt="samar" className="h-[380px] rounded-lg" />
-          <img src="risk.jpg" alt="samar" className="h-[380px] rounded-lg" />
-          <img src="Fail.jpg" alt="samar" className="h-[380px] rounded-lg" />
-          <img src="Again.jpg" alt="samar" className="h-[380px] rounded-lg" />
-          <img src="Archery.jpg" alt="samar" className="h-[380px] rounded-lg" />
-          <img src="Archery.jpg" alt="samar" className="h-[380px] rounded-lg" />
-          <img src="$$$.jpg" alt="samar" className="h-[380px] rounded-lg" />
-          <img src="bearish.jpg" alt="samar" className="h-[380px] rounded-lg" />
-          <img src="bearish.jpg" alt="samar" className="h-[380px] rounded-lg" />
-          <img src="bitcoin.jpg" alt="samar" className="h-[380px] rounded-lg" />
-          <img src="candles.jpg" alt="samar" className="h-[380px] rounded-lg" />
+    <div className="py-20 w-full overflow-hidden">
+      <div className="flex animate-scroll hover:[animation-play-state:paused] w-max gap-12">
+        {[
+          "BTC.avif", "crwallet.jpg", "candles.jpg", "bull.jpg", "ETH.jpg", 
+          "Chart.jpg", "bearish.jpg", "risk.jpg", "Fail.jpg", "Again.jpg", 
+          "Archery.jpg", "Archery.jpg", "$$$.jpg", "bearish.jpg", "bitcoin.jpg"
+        ].map((img, index) => (
+          <img 
+            key={index} 
+            src={`/${img}`} 
+            alt={img} 
+            className="h-[400px] w-auto rounded-2xl object-cover shadow-2xl transition-all duration-700 hover:scale-105" 
+          />
+        ))}
+        {/* Duplicate for seamless loop */}
+        {[
+          "BTC.avif", "crwallet.jpg", "candles.jpg", "bull.jpg", "ETH.jpg", 
+          "Chart.jpg", "bearish.jpg", "risk.jpg", "Fail.jpg", "Again.jpg", 
+          "Archery.jpg", "Archery.jpg", "$$$.jpg", "bearish.jpg", "bitcoin.jpg"
+        ].map((img, index) => (
+          <img 
+            key={`dup-${index}`} 
+            src={`/${img}`} 
+            alt={img} 
+            className="h-[400px] w-auto rounded-2xl object-cover shadow-2xl transition-all duration-700 hover:scale-105" 
+          />
+        ))}
       </div>
-        </div>
     </div>
   );
 };
