@@ -5,7 +5,7 @@ import Input from "./components/Input";
 import Icons from "./components/Icons";
 import Herosec2 from "./components/Herosec2";
 import Robot from "./components/Robot";
-import Herosection from "./components/Herosection";
+import IntegrationSection from "./components/IntegrationSection";
 import Footer from "./components/Footer";
 
 const Page = () => {
@@ -22,7 +22,7 @@ const Page = () => {
           <Icons />
           <Herosec2 />
           <Robot />
-          <Herosection />
+          <IntegrationSection />
         </div>
           <Footer />
       </div>
