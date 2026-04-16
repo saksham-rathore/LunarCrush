@@ -24,19 +24,29 @@ const IntegrationSection = () => {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-blue-600/10 blur-[120px] rounded-full pointer-events-none group-hover:bg-blue-500/15 transition-all duration-1000"></div>
       <div className="absolute top-1/4 -left-20 w-64 h-64 bg-violet-600/10 blur-[100px] rounded-full pointer-events-none animate-pulse"></div>
 
-      <div className="w-full max-w-4xl bg-[#0a0c10] border border-white/10 rounded-3xl overflow-hidden shadow-[0_0_50px_rgba(0,0,0,0.5)] relative">
-        {/* Shine Overlay Effect */}
-        <motion.div 
-          animate={{ x: ["-100%", "200%"] }}
-          transition={{ repeat: Infinity, duration: 4, ease: "linear", repeatDelay: 1 }}
-          className="absolute inset-0 bg-gradient-to-r from-transparent via-white/[0.03] to-transparent -skew-x-12 z-20 pointer-events-none"
-        />
+      <div className="w-full max-w-4xl relative group rounded-3xl p-[1px] overflow-hidden">
+        {/* Always Active Border Shining Animation (Rotating Beam) */}
+        <div className="absolute inset-0 rounded-3xl opacity-30 group-hover:opacity-100 transition-opacity duration-1000">
+          <motion.div
+            animate={{ rotate: 360 }}
+            transition={{ duration: 6, repeat: Infinity, ease: "linear" }}
+            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[150%] h-[150%] bg-[conic-gradient(from_0deg,transparent_0,transparent_25%,#3b82f6_50%,transparent_75%,transparent_100%)]"
+          />
+        </div>
 
-        {/* Top Border Beam Glow */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-px bg-gradient-to-r from-transparent via-blue-500/50 to-transparent z-30"></div>
-        
-        {/* Side Glow Line */}
-        <div className="absolute inset-y-0 left-0 w-px bg-gradient-to-b from-transparent via-blue-500/20 to-transparent"></div>
+        <div className="relative w-full bg-[#0a0c10] rounded-3xl overflow-hidden shadow-[0_0_50px_rgba(0,0,0,0.5)]">
+          {/* Shine Overlay Effect */}
+          <motion.div 
+            animate={{ x: ["-100%", "200%"] }}
+            transition={{ repeat: Infinity, duration: 4, ease: "linear", repeatDelay: 1 }}
+            className="absolute inset-0 bg-gradient-to-r from-transparent via-white/[0.03] to-transparent -skew-x-12 z-20 pointer-events-none"
+          />
+
+          {/* Top Border Beam Glow */}
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-px bg-gradient-to-r from-transparent via-blue-500/50 to-transparent z-30"></div>
+          
+          {/* Side Glow Line */}
+          <div className="absolute inset-y-0 left-0 w-px bg-gradient-to-b from-transparent via-blue-500/20 to-transparent"></div>
         
         {/* Tab Headers */}
         <div className="flex border-b border-white/5">
@@ -126,6 +136,7 @@ const IntegrationSection = () => {
             )}
           </AnimatePresence>
         </div>
+      </div>
       </div>
 
       {/* Integrated With section */}
